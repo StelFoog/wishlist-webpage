@@ -1,3 +1,23 @@
 /*
   Header and navbar
 */
+
+header{
+  nav{
+    a{
+      flex-basis: 20%;
+      text-align: center;
+      background: gray("200")
+    }
+    a:first-child{
+      margin-right: 0.5rem;
+    }
+    a:not(:first-child):not(:last-child) {
+      margin-left: 0.5rem;
+      margin-right: 0.5rem;
+    }
+    a:last-child {
+      margin-left: 0.5rem;
+    }
+  }
+}
