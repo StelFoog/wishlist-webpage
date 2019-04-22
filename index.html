@@ -1,5 +1,25 @@
 ---
 layout: default
+title: Homepage
 ---
 
-<div>hej</div>
+<div class="jumbotron jumbotron-fluid">
+  <div class="container">
+    <h1 class="display-4">Fluid jumbotron</h1>
+    <p class="lead">
+      This is a modified jumbotron that occupies the entire horizontal space of
+      its parent.
+    </p>
+  </div>
+</div>
+<div class="container">
+  <h3 class="border-bottom pb-2">Blog</h3>
+  {% for post in site.posts %}
+  <div class="post border-bottom">
+    <h5>
+      <a href="{{ post.url }}"><u>{{post.title}}</u></a>
+    </h5>
+    {{post.content}}
+  </div>
+  {% endfor %}
+</div>
