@@ -5,6 +5,13 @@
 
 /* Bootstrap */
 
+// Bootstrap custom variables overrides
+
+$theme-colors: (
+  "primary": #8e44ad,
+  "secondary": #bdc3c7,
+);
+
 // Required
 @import "_bootstrap/functions";
 @import "_bootstrap/variables";
