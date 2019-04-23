@@ -5,19 +5,15 @@ title: Homepage
 
 <div class="jumbotron jumbotron-fluid bg-secondary">
   <div class="container">
-    <h1 class="display-4">Project page</h1>
-    <p class="lead">
-      Describe the project here
-    </p>
+    <h1 class="display-4">Team Arpanet</h1>
+    <p class="lead">Website and blog for out wishlist-app project</p>
   </div>
 </div>
 <div class="container">
   <h3 class="display-4 border-bottom pb-2">Blog</h3>
   {% for post in site.posts limit:5 %}
   <div class="post border-bottom">
-    <h3 class="post-link">
-      <a href="{{ post.url }}">{{post.title}}</a>
-    </h3>
+    <h3 class="post-link"><a href="{{ post.url }}">{{post.title}}</a></h3>
     {{post.content}}
   </div>
   {% endfor %}
